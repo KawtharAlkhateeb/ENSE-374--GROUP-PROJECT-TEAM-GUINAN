@@ -1,0 +1,43 @@
+.errorpage
+{
+    color: red;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+#error
+{
+    color: red;
+}
+#registered
+{
+    color: green;
+}
+#tryagain{
+    position: absolute;
+    width: 150px;
+    top: 100px;
+}
+#login{
+    position: absolute;
+    width: 150px;
+    top: 100px;
+    left: 230px;
+}
+#logtryagain{
+    position: absolute;
+    width: 150px;
+    top: 100px;
+}
+#errreg{
+    position: absolute;
+    width: 150px;
+    top: 100px;
+    left: 265px;
+}
+#logtovote{
+    position: absolute;
+    width: 150px;
+    top: 100px;
+    left: 40px;
+}

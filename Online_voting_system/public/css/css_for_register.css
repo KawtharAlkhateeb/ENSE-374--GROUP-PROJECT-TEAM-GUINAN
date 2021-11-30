@@ -1,0 +1,68 @@
+#regemail{
+    position: absolute;
+    width: 53%;
+    top: -20%;
+    left: 25%;
+}
+.email{
+    position: relative;
+    top: 20px;
+}
+.inner{
+    position: absolute;
+    left: 80%;
+    top: 0px;
+}
+#idtextbox{
+    position: absolute;
+    width: 60%;
+    top: -10%;
+    left: 40%;
+}
+.studentid{
+    position: relative;
+    top: 30px;
+}
+.authentok{
+    position: relative;
+    top: 20px;
+}
+#authbox{
+    position: absolute;
+    width: 60%;
+    top: -10%;
+    left: 40%;
+}
+.pass{
+    position: relative;
+}
+#emailerr{
+    color: red;
+    display: none;
+}
+#emailerr2{
+    position: relative;
+    left: 40%;
+    color: red;
+    display: none;
+}
+#emailerr4{
+    position: relative;
+    left: 20%;
+    color: red;
+    top: 5px;
+    display: none;
+}
+#emailerr3{
+    color: red;
+    display: none;
+    position: relative;
+    left: 20px;
+}
+#submiterr{
+    color: red;
+    display: none;
+    position: absolute;
+   left: 40%;
+   top: 30%;
+}

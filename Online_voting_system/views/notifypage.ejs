@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UOR Voting System Register</title>
+    <link rel="stylesheet" href="css/css_for_notifypage.css">
+</head>
+
+<body>
+    <%- include("header"); -%>
+        <div class="errorpage">
+            <% if (notify==="regerror" ) {%>
+                <div id="error">
+                    Entered Secret Authentication token value is incorrect
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-outline-warning" id="tryagain" value="TRY AGAIN">
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-outline-warning" id="login" value="LOG IN">
+                <% } %>
+                    <% if (notify==="loginerr" ) {%>
+                        <div id="error">
+                            Entered Username or Password is Incorrect or doesn't exist
+                        </div>
+                        <div>
+                            <input type="submit" class="btn btn-outline-warning" id="logtryagain" value="TRY AGAIN">
+                        </div>
+                        <div>
+                            <input type="submit" class="btn btn-outline-warning" id="errreg" value="REGISTER">
+                        </div>
+                        <% } %>
+                        <% if (notify==="registered" ) {%>
+                            <div id="registered">
+                                Congrats!!! Your Registeration is Successfull
+                            </div>
+                            <div>
+                                <input type="submit" class="btn btn-outline-warning" id="logtovote" value="LOGIN TO VOTE">
+                            </div>
+                            <% } %>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="JavaScript/js_for_notifypage.js"></script>
+</body>

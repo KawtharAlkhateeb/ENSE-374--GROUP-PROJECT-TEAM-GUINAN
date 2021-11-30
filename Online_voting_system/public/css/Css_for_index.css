@@ -1,0 +1,50 @@
+.main{
+    position: absolute;
+    width: 500px;
+    top: 35%;
+    left: 35%;
+    border: 1px solid lightgray;
+    padding: 15px;
+    border-radius: 10px;
+}
+.logerr{
+    display: none;
+    color: red;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.lgn{
+    position: relative;
+    left: 150px;
+}
+.frm{
+    position: fixed; 
+    left: 50%;
+}
+.btn{
+    position: relative;
+    width: 468px;
+}
+.bgnd{
+    width: 100%;
+    top: 10%;
+    position: absolute;
+    background-color: #ffc107;
+}
+.img{
+    position: relative;
+    left: 80%;
+    background-color: white;
+    width: 210px;
+}
+.setimg{
+    height: 100px ;
+    width: 210px;
+}
+.form-text
+{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}

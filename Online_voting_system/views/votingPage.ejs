@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css_for_votingPage.css">
+    <title> University of Regina-vote </title>
+</head>
+
+<body>
+    <%- include("header") -%>
+        <div class="logout">
+            <div class="link">
+                <p>
+                    <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                        aria-controls="collapseExample" class="userview">
+                        Logged in as <%=username %> (Click to logout)
+                    </a>
+                </p>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <form action="/logout" method="get">
+                    <input type="submit" class="btn btn-outline-success btn-sm logoutBtn" value="Logout" />
+                </form>
+            </div>
+        </div>
+        <h1 class="text-center header fw-bold"> Welcome to University of Regina Voting system </h1>
+        <br>
+        <div id="position" class="container">
+            <br>
+            <h2> President </h2>
+            <div class="positionDiv">
+                <% for (let i=0; i < candidates.length; i++) { %>
+                    <% var test=candidates.length; %>
+                        <% if (candidates[i].position=="President" ){%>
+                            <h4>
+                                <%= candidates[i].name%>
+                            </h4>
+                            <img src="data:image/<%=candidates[i].img.contentType%>;base64,
+                                <%=candidates[i].img.data.toString('base64')%>" class="candidateImg" height="100" width="100">
+                            <p class="candidateInfo fs-6 fw-light text-wrap">
+                                <%= candidates[i].info%>
+                                    <span>
+                                        <form action="/info" method="post">
+                                            <input type="hidden" name="id" value='<%=candidates[i].id%>' />
+                                            <input type="submit" class="btn btn-light btn-sm" name="aboutMe"
+                                                value="More About me" />
+                                        </form>
+                                    </span>
+                                    <% if(candidates[i].button==false) { %>
+                                        <form method="post" action="/vote" id="voteform">
+                                            <input type="submit" class="btn btn-outline-success votingBtn" value="Vote"
+                                                id="forsweet<%=candidates[i].id%>" />   
+                                            <input type="hidden" name="id" value='<%=candidates[i].id%>' />
+                                            <input type="hidden" name="pos" value='<%=candidates[i].position %>' />
+
+                                        </form>
+                                        <% } else { %>
+                                            <span class="floatRight">
+                                                Number of people that voted me: <%= candidates[i].numOfVotes%>
+                                            </span>
+                                            <% } %>
+                                                <br>
+                            </p>
+                            <br>
+                            <% } }%>
+            </div>
+            <br>
+            <div class="vicepresident">
+                <h2> Vice-President </h2>
+            </div>
+            <br>
+            <div class="positionDiv">
+                <% for (let i=0; i < candidates.length; i++) { %>
+                    <% if (candidates[i].position=="Vice-President" ) { %>
+                        <h4>
+                            <%= candidates[i].name%>
+                        </h4>
+                        <img src="data:image/<%=candidates[i].img.contentType%>;base64,
+                            <%=candidates[i].img.data.toString('base64')%>" class="candidateImg" height="100" width="120">
+                        <br>
+                        <p class="candidateInfo fs-6 fw-light text-wrap">
+                            <%= candidates[i].info%>
+                                <span>
+                                    <form action="/info" method="post">
+                                        <input type="hidden" name="id" value='<%=candidates[i].id%>' />
+                                        <input type="submit" class="btn btn-light btn-sm" name="aboutMe"
+                                            value="More About me" />
+                                    </form>
+                                    <div class="prespick">
+                                </span>
+                                <% if(candidates[i].button==false){ %>
+                                    <form action="/vote" method="post" id="voteform<%=candidates[i].id%>">
+                                        <input type="submit" class="btn btn-outline-success votingBtn" value="Vote"
+                                            id="forsweet<%=candidates[i].id%>" name="voteBtn" />
+                                        <input type="hidden" name="id" value='<%=candidates[i].id%>' />
+                                        <input type="hidden" name="pos" value='<%=candidates[i].position%>' />
+
+                                    </form>
+            </div>
+            <% } else {%>
+                <span class="floatRight">
+                    Number of people that voted me: <%=candidates[i].numOfVotes %>
+                </span>
+                <% } %>
+                    <br>
+                    </p>
+                    <br>
+                    <% } } %>
+        </div>
+        </div>
+        <script>
+            var getTest = '<%- JSON.stringify(test) %>'; // test is now a valid js object
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="JavaScript/js_for_votingPage.js"></script>
+</body>
+
+</html>
