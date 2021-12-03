@@ -58,8 +58,31 @@
 <br/>
 
 ## 3. Run MongoDB in your system.
++ Open two Windows PowerShell terminals as Admin and type the following commands in them.
+```powershell
+mongod
+```
+```powershell
+mongo
+```
 #### Note for Windows:
-#### 
+#### If the following commands do not work, follow the steps below:
++ Make an Alias file:  
+Open powershell and open your powershell profile:
+```powershell
+notepad $profile
+```
+If you get an error that the path doesn’t exist, then you can create it with:
+```powershell
+New-item -Path $profile -ItemType File -Force
+```
+Then attempt to open the file again.
+Now paste in:
+```powershell
+Set-Alias mongod "C:\Program Files\MongoDB\Server\5.0\bin\mongod.exe"
+Set-Alias mongo "C:\Program Files\MongoDB\Server\5.0\bin\mongo.exe"
+```
+<span style="color: red;">Change the path of mongod and mongo if installed someplace other than C:/ drive </span> 
 
 
 
