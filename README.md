@@ -67,7 +67,7 @@ mongo
 ```
 #### Note for Windows:
 #### If the following commands do not work, follow the steps below:
-+ Make an Alias file:  
++ **Make an Alias file:**  
 Open powershell and open your powershell profile:
 ```powershell
 notepad $profile
@@ -82,7 +82,7 @@ Now paste in:
 Set-Alias mongod "C:\Program Files\MongoDB\Server\5.0\bin\mongod.exe"
 Set-Alias mongo "C:\Program Files\MongoDB\Server\5.0\bin\mongo.exe"
 ```
-<span style="color: red;">Change the path of mongod and mongo if installed someplace other than C:/ drive </span> 
+**Change the path of mongod and mongo if installed someplace other than C:/ drive** 
 
 
 
