@@ -137,11 +137,11 @@ localhost:4000
 <br/>
 
 #### 2. Run the webapp using nodemon.
-##### Install nodemon using the command:
+##### Install nodemon using the command in VScode Terminal:
 ```powershell
 npm i -g nodemon
 ```
-#### After installing nodemon use the command:
+#### After installing nodemon,use the command:
 ```powershell
 nodemon
 ```
