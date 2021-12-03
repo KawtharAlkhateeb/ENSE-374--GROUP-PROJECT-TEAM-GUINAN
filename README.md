@@ -95,6 +95,7 @@ Run the following:
 Set-ExecutionPolicy Unrestricted
 ```
 Restart all powershell instances
+
 ---
 ##### 2. **Create a data directory**
 
