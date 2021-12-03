@@ -48,14 +48,16 @@
 + Click on **Code** at the top left of the github repository present in **green** color.
 + Copy the link of the github repository.
 + Go to the **git terminal** and use the command **git clone https://github.com/akashmarwaha1/ENSE-374--GROUP-PROJECT-TEAM-GUINAN.git**.
-+ Open the folder in VSCode Studio and follow **Step 3**.
++ Open the folder in VSCode Studio and follow **Steps 3 & 4**.
 
 ### II. Download the zip file.
 + Click on the **Code** present in green color in the github repository.
 + Click on **Download ZIP** option from the dropdown.
 + Go to the downloaded zip file and extract the contents using a zip file extractor like **WinRAR**.
-+ Open the folder in VSCode Studio and follow **Step 3**.
++ Open the folder in VSCode Studio and follow **Step 3 & 4**.
 <br/>
+
+---
 
 ## 3. Run MongoDB in your system.
 + Open two Windows PowerShell terminals as Admin and type the following commands in them.
@@ -109,4 +111,57 @@ c:/data/db
 ```
 This is where your databases will be stored.
 
+Check it is working with:
+```powershell
+mongo --version
+```
+---
 
+## 4. Open Vscode command line.
+Install all the dependencies using given command:
+```powershell
+npm install express ejs mongoose passport passport-local passport-local-mongoose express-session dotenv
+``` 
+---
+
+## 5. Running the web application:
+### Two methods for running the webapp.
+#### 1. Run the webpage using nodejs command:
+```powershell
+node app.js
+```
+Open the below link in your web browser:
+```powershell
+localhost:4000
+```
+<br/>
+
+#### 2. Using nodemon.
+##### Install nodemon using the command:
+```powershell
+npm i -g nodemon
+```
+#### After installing nodemon use the command:
+```powershell
+nodemon
+```
+Open the below link in your web browser:
+```powershell
+localhost:4000
+```
+(-g is used to install nodemon globally into the system)
+<br/>
+
+---
+---
+
+# User Guide
+
+## To Register in the webapp, read the following instructions:
++ The username should be 6 letters including 3-alphabets and 3-numbers (eg. ame000)
++ The id number should be 9 digits (all numbers).
++ Use Uregina$%&2021 as the authentication token.
+
+## To login
++ Enter the complete username. (eg. ame000@uregina.ca)
++ Passwords in both the fields should match.
