@@ -24,7 +24,7 @@
 
 #### Project design architecture(Activity 3)- https://youtu.be/4kjJW835Jls
 
-## --------------------------------------------------------------------------------------
+---
 
 # Installation Guide
 
@@ -58,6 +58,8 @@
 <br/>
 
 ## 3. Run MongoDB in your system.
+#### Note for Windows:
+#### 
 
 
 
