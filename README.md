@@ -158,9 +158,9 @@ localhost:4000
 # User Guide
 
 ## To Register in the webapp, read the following instructions:
-+ The username should be 6 letters including 3-alphabets and 3-numbers (eg. ame000)
-+ The id number should be 9 digits (all numbers).
-+ Use Uregina$%&2021 as the authentication token.
++ The **username** should be 6 letters including 3-alphabets and 3-numbers (eg. ame000)
++ The **ID** should be 9 digits (all numbers).
++ Use **Uregina$%&2021** as the authentication token.
 
 ## To login
 + Enter the complete username. (eg. ame000@uregina.ca)
