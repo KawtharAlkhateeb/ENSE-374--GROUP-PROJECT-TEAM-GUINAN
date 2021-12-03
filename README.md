@@ -54,7 +54,7 @@
 + Click on the **Code** present in green color in the github repository.
 + Click on **Download ZIP** option from the dropdown.
 + Go to the downloaded zip file and extract the contents using a zip file extractor like **WinRAR**.
-+ Open the folder in VSCode Studio and follow **Step 3, 4 and 5**.
++ Open the folder in VSCode Studio and follow **Steps 3, 4 and 5**.
 <br/>
 
 ---
