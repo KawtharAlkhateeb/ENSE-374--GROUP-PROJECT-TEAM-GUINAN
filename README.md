@@ -66,8 +66,8 @@ mongod
 mongo
 ```
 #### Note for Windows:
-#### If the following commands do not work, follow the steps below:
-+ **Make an Alias file:**  
+#### If the above commands do not work, follow the steps below:
+##### 1. **Make an Alias file:**  
 Open powershell and open your powershell profile:
 ```powershell
 notepad $profile
@@ -83,6 +83,29 @@ Set-Alias mongod "C:\Program Files\MongoDB\Server\5.0\bin\mongod.exe"
 Set-Alias mongo "C:\Program Files\MongoDB\Server\5.0\bin\mongo.exe"
 ```
 **Change the path of mongod and mongo if installed someplace other than C:/ drive** 
+<br/>
+Save, close, and restart powershell.
+<br/>
 
+**If you get text warning that you can’t run scripts, you will need to:**
+
+Open a powershell as an administrator
+Run the following:
+```powershell
+Set-ExecutionPolicy Unrestricted
+```
+Restart all powershell instances
+---
+##### 2. **Create a data directory**
+
+create the folders:
+```
+c:/data
+```
+and
+```
+c:/data/db
+```
+This is where your databases will be stored.
 
 
