@@ -126,7 +126,7 @@ npm install express ejs mongoose passport passport-local passport-local-mongoose
 
 ## 5. Running the web application:
 ### Two methods for running the webapp.
-#### 1. Run the webpage using nodejs command:
+#### 1. Run the webapp using nodejs command:
 ```powershell
 node app.js
 ```
@@ -136,7 +136,7 @@ localhost:4000
 ```
 <br/>
 
-#### 2. Using nodemon.
+#### 2. Run the webapp using nodemon.
 ##### Install nodemon using the command:
 ```powershell
 npm i -g nodemon
