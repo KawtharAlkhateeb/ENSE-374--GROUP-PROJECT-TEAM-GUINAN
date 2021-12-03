@@ -23,3 +23,32 @@
 #### Project prerequisites/planning(Activity 2) - https://youtu.be/-FFOxKog9ks
 
 #### Project design architecture(Activity 3)- https://youtu.be/4kjJW835Jls
+
+## -----------------------------------------------------------------------------------------------------------
+
+# Installation Guide
+
+## 1. Install Required softwares
+
++ [click to install git](https://git-scm.com/downloads)
++ [click to install WinRAR](https://www.win-rar.com/download.html?&L=0)
++ [Click to install VSCode Studio](https://code.visualstudio.com/download)
++ [Click to install Node.js](https://nodejs.org/en/download/)
++ [Click to install MongoDB Community Server](https://www.mongodb.com/try/download/community)
+<br/>
+
+## 2. Two methds to install the web application in your system:
+
+### I. Clone the github repository in your system.
++ Create a new folder in your system with any name.
++ Open the folder and right click in the folder.
++ Select the "git bash here" option from the drop down.
++ Go to the github repository.
++ Click on *Code* at the top left of the github repository present in *green* color.
++ Copy the link of the github repository.
++ Go to the *git terminal* and use the command *git https://github.com/akashmarwaha1/ENSE-374--GROUP-PROJECT-TEAM-GUINAN.git*
+
+### II. Download the zip file.
++ Click on the *Code* present in green color in the github repository.
++ Click on *Download ZIP* option from the dropdown.
++ Go to the downloaded zip file and extract the contents using a zip file extractor like WinRAR.
