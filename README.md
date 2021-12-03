@@ -48,13 +48,13 @@
 + Click on **Code** at the top left of the github repository present in **green** color.
 + Copy the link of the github repository.
 + Go to the **git terminal** and use the command **git clone https://github.com/akashmarwaha1/ENSE-374--GROUP-PROJECT-TEAM-GUINAN.git**.
-+ Open the folder in VSCode Studio and follow **Steps 3 & 4**.
++ Open the folder in VSCode Studio and follow **Steps 3, 4 and 5**.
 
 ### II. Download the zip file.
 + Click on the **Code** present in green color in the github repository.
 + Click on **Download ZIP** option from the dropdown.
 + Go to the downloaded zip file and extract the contents using a zip file extractor like **WinRAR**.
-+ Open the folder in VSCode Studio and follow **Step 3 & 4**.
++ Open the folder in VSCode Studio and follow **Step 3, 4 and 5**.
 <br/>
 
 ---
