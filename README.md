@@ -34,7 +34,8 @@
 + [click to install "WinRAR"](https://www.win-rar.com/download.html?&L=0)
 + [Click to install "VSCode Studio"](https://code.visualstudio.com/download)
 + [Click to install "Node.js"](https://nodejs.org/en/download/)
-+ [Click to install "MongoDB Community Server"](https://www.mongodb.com/try/download/community)
++ Click to install "MongoDB Community Server"
+[Windows](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/) [Linux](https://docs.mongodb.com/manual/administration/install-on-linux/) [Ubuntu](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) [MacOS](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
 <br/>
 
 ## 2. Two methds to install the web application in your system:
@@ -56,6 +57,7 @@
 + Open the folder in VSCode Studio and follow **Step 3**.
 <br/>
 
-## 3. Open the folder in VSCode Studio.
+## 3. Run MongoDB in your system.
+
 
 
